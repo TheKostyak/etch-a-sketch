@@ -17,3 +17,10 @@ function createGrid(){
     };
 };
 createGrid();
+
+const gridElements = document.querySelectorAll(".grid-element");
+gridElements.forEach((gridElement)=>{
+    gridElement.addEventListener("mousemove", ()=>{
+        gridElement.style.backgroundColor= "black";
+    })
+})
