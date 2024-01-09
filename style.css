@@ -3,17 +3,23 @@
     margin: 0;
 }
 
-.container {margin: 20px;
+.container {
+    width: 630px;
+    height: 630px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
 }
 
 .flex-row {
     display: flex;
+    height: 100%;
 }
 
 .grid-element {
+    flex-grow: 1;
+    flex-basis: 0;
     width: 30px;
-    height: 30px;
+    height: 100%;
     border: 1px solid black;
 }
